@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Feb 12 20:18:23 2024
+# Process ID: 37632
+# Current directory: C:/Users/lotto/Desktop/Consegna/Block_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10740 C:\Users\lotto\Desktop\Consegna\Block_Design\Block_Design.xpr
+# Log file: C:/Users/lotto/Desktop/Consegna/Block_Design/vivado.log
+# Journal file: C:/Users/lotto/Desktop/Consegna/Block_Design\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16870 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lotto/Desktop/Consegna/Block_Design/Block_Design.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/lotto/Desktop/Consegna/Block_Design/Block_Design.srcs/sources_1/bd/B_Design/B_Design.bd}
+startgroup
+set_property CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {0.1} [get_bd_cells processing_system7_0]
+endgroup
+reset_run B_Design_processing_system7_0_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run impl_1
